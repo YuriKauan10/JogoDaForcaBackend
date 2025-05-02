@@ -1,13 +1,18 @@
-palavra = 'yuri'
+palavra = 'yurizin'
 sugestao = 'i'
 
-cont = 0
-for i in range(len(palavra)):
-    cont +=1
-cont = '_ ' * cont
-print(cont)
+
+nova = ''
 
 for i in range(len(palavra)):
     if sugestao == palavra[i]:
-        print(i)
-        print(palavra[i])
+        nova += sugestao + " "
+        contIndice = i
+    else:
+        nova += "_ "
+
+print(nova)
+
+
+
+
